@@ -11,11 +11,12 @@
     <title>Calculadora Datos</title>
   </head>
   <body>
-    <h1>Calculadora de equivalencia entre tamaño de datos</h1>
+    <h1>Calculadora valor de compra de producto</h1>
     <hr>
     <br>
 <script>
-
+    
+  <!--
 function doCalc(flagA)
 {
    Rels = new Array(1,8,8192,8388608,8589934592,8796093022208);
@@ -84,6 +85,7 @@ function doCalc(flagA)
         document.getElementById(i).value=eval(newVal);
    }
 }
+// end Conversion: bits and bytes -->
 </script>
 
 <p align="center"><font size="4"><b>Conversion: entre Bits y Bytes</b></font><br>
@@ -94,39 +96,33 @@ function doCalc(flagA)
     <form name="flagA">
         <table border="0" align="center" cellpadding="1" cellspacing="0"> 
           <tbody><tr>
-            <td align="right"><font size="2">bit (b):</font></td>
+            <td align="right"><font size="2">Valor de Compra ($):</font></td>
             <td>
                 <input id="0" size="20" onchange="doCalc(0)" value="" style="background-color: #FFFFFF" spellcheck="false" data-ms-editor="true"> Ejemplo: 4194304000
             </td>
           </tr>
           <tr>
-            <td align="right"><font size="2">Byte (B):</font></td>
+            <td align="right"><font size="2"> Porcentaje Utilidad o Ganancia (%):</font></td>
             <td>
                 <input id="1" size="20" onchange="doCalc(1)" value="" style="background-color: #FFFFFF" spellcheck="false" data-ms-editor="true"> Ejemplo: 524288000
             </td>
           </tr>
           <tr>
-            <td align="right"><font size="2">Kilobyte (KB):</font></td>
+            <td align="right"><font size="2">Porcentaje IVA (%):</font></td>
             <td>
                 <input id="2" size="20" onchange="doCalc(2)" value="" style="background-color: #FFFFFF" spellcheck="false" data-ms-editor="true"> Ejemplo: 512000
             </td>
           </tr>
           <tr>
-            <td align="right"><font size="2">Megabyte (MB):</font></td>
+            <td align="right"><font size="2">Valor de Venta ($):</font></td>
             <td>
                 <input id="3" size="20" onchange="doCalc(3)" value="" style="background-color: #FFFFFF" spellcheck="false" data-ms-editor="true"> Ejemplo: 500
             </td>
           </tr>
           <tr>
-            <td align="right"><font size="2">Gigabyte (GB):</font></td>
+            <td align="right"><font size="2">Ganancia ($):</font></td>
             <td>
                 <input id="4" size="20" onchange="doCalc(4)" value="" style="background-color: #FFFFFF" spellcheck="false" data-ms-editor="true">
-            </td>
-          </tr>
-          <tr>
-            <td align="right"><font size="2">Terabyte (TB):</font></td>
-            <td>
-                <input id="5" size="20" onchange="doCalc(5)" value="" style="background-color: #FFFFFF" spellcheck="false" data-ms-editor="true">
             </td>
           </tr>
           <tr>
